@@ -18,5 +18,5 @@ else
     cd /
     rm -r .downloaded
     clear
-    echoInstal Packer Non Root Package Manager
+    echo Installed Packer Non Root Package Manager
 fi
