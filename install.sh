@@ -7,20 +7,8 @@ then
     sudo dpkg -i Packer.deb
     cd /
     sudo rm -r .downloaded
-    echo Installed Packer Sudo Root
     clear
-else
-if [[ -f /bin/su ]]
-then
-    cd /
-    su mkdir .downloaded
-    cd .downloaded
-    su wget https://github.com/packageash/packer-app-su/releases/download/1.0/Packer.deb
-    su dpkg -i Packer.deb
-    cd /
-    su rm -r .downloaded
-    echo Installed Packer Su Root
-    clear
+    echo Installed Packer Sudo Root Package Manager
 else
     cd /
     mkdir .downloaded
@@ -30,4 +18,5 @@ else
     cd /
     rm -r .downloaded
     clear
+    echoInstal Packer Non Root Package Manager
 fi
